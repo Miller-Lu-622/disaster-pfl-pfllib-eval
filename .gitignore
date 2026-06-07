@@ -6,3 +6,6 @@
 dataset/*/
 !dataset/utils/
 !dataset/utils/**
+
+!results/
+!results/cifar10_fedavg_run_summary.json
