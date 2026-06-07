@@ -1,0 +1,56 @@
+UoA cluster successful run log summary
+Date: 2026-06-07
+Cluster path: /data/hlu922/disaster-pfl-pfllib-eval
+Script: run_cifar10_fedavg.sh
+Setting: CIFAR-10 non-IID, CNN, FedAvg, 20 global rounds, 20 clients, CUDA
+
+Final log excerpt:
+-------------Round number: 18-------------
+
+Evaluate global model
+Averaged Train Loss: 1.9089
+Averaged Test Accuracy: 0.2814
+Averaged Test AUC: 0.7644
+Std Test Accuracy: 0.2386
+Std Test AUC: 0.1120
+------------------------- time cost ------------------------- 13.96063780784607
+
+-------------Round number: 19-------------
+
+Evaluate global model
+Averaged Train Loss: 1.8994
+Averaged Test Accuracy: 0.2872
+Averaged Test AUC: 0.7666
+Std Test Accuracy: 0.2370
+Std Test AUC: 0.1139
+------------------------- time cost ------------------------- 13.891515493392944
+
+-------------Round number: 20-------------
+
+Evaluate global model
+Averaged Train Loss: 1.8779
+Averaged Test Accuracy: 0.2901
+Averaged Test AUC: 0.7723
+Std Test Accuracy: 0.2350
+Std Test AUC: 0.1087
+------------------------- time cost ------------------------- 13.886579275131226
+
+Best accuracy.
+0.29010329890036657
+
+Average time cost per round.
+13.89338685274124
+File path: ../results/Cifar10_FedAvg_test_0.h5
+
+Average time cost: 296.41s.
+Length: 21
+std for best accuracy: 0.0
+mean for best accuracy: 0.29010329890036657
+All done!
+
+Storage on cuda:0
+-------------------------------------------------------------------------------
+Total Tensors: 54469356 Used Memory: 140.81M
+The allocated memory on cuda:0: 157.68M
+Memory differs due to the matrix alignment or invisible gradient buffer tensors
+-------------------------------------------------------------------------------
