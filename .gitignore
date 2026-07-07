@@ -7,5 +7,23 @@ dataset/*/
 !dataset/utils/
 !dataset/utils/**
 
-!results/
-!results/cifar10_fedavg_run_summary.json
+
+# xBD raw/processed data and generated outputs
+datasets/xbd_raw/
+datasets/xbd_processed/
+dataset/xBD_event_balanced/
+results/
+logs/
+
+# model/checkpoint/result binaries
+*.pt
+*.pth
+*.h5
+*.npz
+
+# image/geospatial data
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
