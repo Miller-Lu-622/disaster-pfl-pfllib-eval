@@ -123,7 +123,12 @@ class clientDitto(Client):
         y_prob = np.concatenate(y_prob, axis=0)
         y_true = np.concatenate(y_true, axis=0)
 
-        auc = metrics.roc_auc_score(y_true, y_prob, average='micro')
+        if self.num_classes == 2:
+            y_true_1d = np.argmax(y_true, axis=1) if y_true.ndim == 2 else y_true
+            y_score = y_prob[:, 1] if y_prob.ndim == 2 else y_prob
+            auc = metrics.roc_auc_score(y_true_1d, y_score)
+        else:
+            auc = metrics.roc_auc_score(y_true, y_prob, average='micro')
         
         return test_acc, test_num, auc
 
